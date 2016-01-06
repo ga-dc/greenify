@@ -11,6 +11,8 @@ $(document).ready(function(){
   $("h4").on("click", function(){
     $(".greenified").switchColors()
   })
-
+  $("h5").on("click", function(){
+    $(".greenified").biggify()
+  })
 
 })
