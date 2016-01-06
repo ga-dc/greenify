@@ -19,4 +19,10 @@
       "background-color": self.css("color")
     })
   }
+
+  $.fn.biggify = function(){
+    this.css("font-size", "50px")
+    return this
+  }
+
 })(jQuery);
