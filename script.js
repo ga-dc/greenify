@@ -8,4 +8,9 @@ $(document).ready(function(){
   $("h3").on("click", function(){
     $("body").addGreenDiv()
   })
+  $("h4").on("click", function(){
+    $(".greenified").switchColors()
+  })
+
+
 })
