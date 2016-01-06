@@ -19,4 +19,11 @@
       "background-color": self.css("color")
     })
   }
+
+  $.fn.kittyGif = function(){
+    var kitty = $("<img src = 'https://media.giphy.com/media/ABx0cz6UyI0pO/giphy.gif'/>")
+    $('body').append(kitty)
+    return kitty
+  }
+
 })(jQuery);
