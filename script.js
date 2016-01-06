@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("div").greenify()
   })
   $("h3").on("click", function(){
-    $("body").addGreenDiv()
+    $("body").addGreenDiv().kittyGif()
   })
   $("h4").on("click", function(){
     $(".greenified").switchColors()
