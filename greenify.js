@@ -19,4 +19,9 @@
       "background-color": self.css("color")
     })
   }
+
+  $.fn.randomColor = function () {
+  this.css('background-color', "#"+((1<<24)*Math.random()|0).toString(16));
+  return this;
+};
 })(jQuery);
