@@ -12,6 +12,11 @@
     return div
   }
 
+   $.fn.greenifyBackground = function() {
+     this.css("background-color" , "green");
+     return this;
+   };
+
   $.fn.switchColors = function(){
     var self = this
     this.css({
