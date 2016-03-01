@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(".greenified").switchColors()
   })
   $("h5").on("click", function(){
-    $("body").append($("<div><img src='http://images.clipartpanda.com/oak-tree-clipart-tree-clip-art_1404139671.jpg'/></div>"))
+    $("body").growTree()
   })
 
 })

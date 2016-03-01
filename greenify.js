@@ -19,4 +19,8 @@
       "background-color": self.css("color")
     })
   }
+
+  $.fn.growTree = function(){
+    this.append($("<div><img src='http://images.clipartpanda.com/oak-tree-clipart-tree-clip-art_1404139671.jpg'/></div>"));
+  }
 })(jQuery);
