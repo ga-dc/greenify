@@ -19,4 +19,26 @@
       "background-color": self.css("color")
     })
   }
-})(jQuery);
+
+  $.fn.addGreenGrid = function(rows, columns) {
+    if (!rows) rows = 4
+    if (!columns) columns = 4
+    var height = "25px", width = "25px"
+    var table = $("<table></table>")
+    var i, j
+    for (i = 0; i < rows; i++) {
+      var row = $("<tr></tr>")
+      for (j = 0; j < columns; j++) {
+        var cell = $("<td></td").css({
+            "background-color": "green",
+            "height": height,
+            "width": width,
+        })
+        row.append(cell)
+      }
+      table.append(row)
+    }
+    this.append(table)
+    return this
+  }
+})(jQuery)
