@@ -3,7 +3,7 @@ $(document).ready(function(){
     $("body").append($("<div>jQuery plugins are cool!</div>"))
   })
   $("h2").on("click", function(){
-    $("div").greenify()
+    $("div").greenifyBackground()
   })
   $("h3").on("click", function(){
     $("body").addGreenDiv()
